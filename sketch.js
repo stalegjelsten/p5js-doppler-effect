@@ -22,7 +22,7 @@ function setup() {
 
   gui.add(me, "period", 0, 5, 0.25)
   gui.add(me, "waveSpeed", 0, 10, 0.5)
-  gui.add(me, "listeningDistance", 0, height, 10)
+  gui.add(me, "listeningDistance", 0, height-200, 10)
   gui.add(me, "vx", -5, 5, 0.1).listen()
   gui.add(me, "x", 0, width, 10).listen()
   gui.add(me, "drawGraphs")
@@ -75,7 +75,7 @@ class SoundSource {
     this.period = 0.75
     this.time = 0
     this.waveSpeed = 2
-    this.listeningDistance = height / 2
+    this.listeningDistance = 300
     this.drawGraphs = true
   }
 
