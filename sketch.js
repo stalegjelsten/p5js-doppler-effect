@@ -10,10 +10,13 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER)
-  me = new SoundSource(200, 200)
-  for (let i = 0; i < 2; i++) {
-
-    observers.push(new Observer(i * width + 150 - 300 * i, 3 * height / 4))
+  me = new SoundSource(100, 200)
+  if (width > 600) {
+    for (let i = 0; i < 2; i++) {
+      observers.push(new Observer(i * width + 150 - 300 * i, 3 * height / 4))
+    }
+  } else {
+    observers.push(new Observer(width-50, 3 * height / 4))
   }
   let gui = new dat.GUI();
 
