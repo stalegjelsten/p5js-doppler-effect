@@ -76,7 +76,7 @@ class SoundSource {
     this.time = 0
     this.waveSpeed = 2
     this.listeningDistance = 300
-    this.drawGraphs = true
+    this.drawGraphs = false
   }
 
   playPause() {
